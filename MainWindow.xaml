@@ -1,0 +1,23 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,229,0">
+        <Button x:Name="sum1" Content="sum" HorizontalAlignment="Left" Margin="138,289,0,0" VerticalAlignment="Top" Click="sum" Height="89" Width="116"/>
+        <Button x:Name="sub1" Content="sub" HorizontalAlignment="Left" Margin="259,294,0,0" VerticalAlignment="Top" Click="sub" Height="80" Width="57"/>
+        <Button x:Name="mul1" Content="mul" HorizontalAlignment="Left" Margin="334,267,0,0" VerticalAlignment="Top" Click="mul" Height="74" Width="85"/>
+        <Button x:Name="div1" Content="div" HorizontalAlignment="Left" Margin="424,289,0,0" VerticalAlignment="Top" Click="div"/>
+        <Label Content="Num1" HorizontalAlignment="Left" Margin="108,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="Num2" HorizontalAlignment="Left" Margin="108,0,0,0" VerticalAlignment="Center"/>
+        <TextBox Name="num1box" HorizontalAlignment="Left" Margin="168,212,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="num2box" HorizontalAlignment="Left" Margin="168,160,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="ans" Content="answer" HorizontalAlignment="Left" Margin="359,98,0,0" VerticalAlignment="Top"/>
+        <WrapPanel x:Name="History" Margin="0,10,-215,303"/>
+
+
+    </Grid>
+</Window>
