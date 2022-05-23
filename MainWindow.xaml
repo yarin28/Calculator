@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0,0,229,0">
-        <Button x:Name="sum1" Content="sum" HorizontalAlignment="Left" Margin="138,289,0,0" VerticalAlignment="Top" Click="sum" Height="89" Width="116"/>
-        <Button x:Name="sub1" Content="sub" HorizontalAlignment="Left" Margin="259,294,0,0" VerticalAlignment="Top" Click="sub" Height="80" Width="57"/>
-        <Button x:Name="mul1" Content="mul" HorizontalAlignment="Left" Margin="334,267,0,0" VerticalAlignment="Top" Click="mul" Height="74" Width="85"/>
-        <Button x:Name="div1" Content="div" HorizontalAlignment="Left" Margin="424,289,0,0" VerticalAlignment="Top" Click="div"/>
-        <Label Content="Num1" HorizontalAlignment="Left" Margin="108,152,0,0" VerticalAlignment="Top"/>
-        <Label Content="Num2" HorizontalAlignment="Left" Margin="108,0,0,0" VerticalAlignment="Center"/>
-        <TextBox Name="num1box" HorizontalAlignment="Left" Margin="168,212,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="num2box" HorizontalAlignment="Left" Margin="168,160,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="ans" Content="answer" HorizontalAlignment="Left" Margin="359,98,0,0" VerticalAlignment="Top"/>
-        <WrapPanel x:Name="History" Margin="0,10,-215,303"/>
+        <Button x:Name="sum1" Content="sum" HorizontalAlignment="Left" Margin="234,93,0,0" VerticalAlignment="Top" Click="sum" Height="44" Width="40"/>
+        <Button x:Name="sub1" Content="sub" HorizontalAlignment="Left" Margin="274,93,0,0" VerticalAlignment="Top" Click="sub" Height="44" Width="44"/>
+        <Button x:Name="mul1" Content="mul" HorizontalAlignment="Left" Margin="318,93,0,0" VerticalAlignment="Top" Click="mul" Height="44" Width="43"/>
+        <Button x:Name="div1" Content="div" HorizontalAlignment="Left" Margin="361,93,0,0" VerticalAlignment="Top" Click="div" Height="44" Width="39"/>
+        <Label Content="Num1" HorizontalAlignment="Left" Margin="35,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Num2" HorizontalAlignment="Left" Margin="35,67,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="num1box" HorizontalAlignment="Left" Margin="88,71,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="num2box" HorizontalAlignment="Left" Margin="88,44,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="ans" Content="answer" HorizontalAlignment="Left" Margin="294,10,0,0" VerticalAlignment="Top"/>
+        <WrapPanel x:Name="History" Margin="572,3,-215,6"/>
 
 
     </Grid>

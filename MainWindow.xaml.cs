@@ -52,7 +52,7 @@ namespace Calculator
             double answer = num1 + num2;
             ans.Content = answer;
 
-            AddHistory(num1, num2, answer);
+            AddHistory(num1, num2, answer,"+");
 
         }
 
@@ -93,16 +93,6 @@ namespace Calculator
             label.HorizontalAlignment = HorizontalAlignment.Left;
             label.VerticalAlignment = VerticalAlignment.Top;
             label.Content = $"{ num1}\n+\n {num2}\n--------\n{answer}";
-            History.Children.Add(label);
-        }
-        private void AddHistoryFlat(double num1, double num2, double answer)
-        {
-            Label label = new Label();
-            label.Height = 100;
-            label.Width = 100;
-            label.HorizontalAlignment = HorizontalAlignment.Left;
-            label.VerticalAlignment = VerticalAlignment.Top;
-            label.Content = $"{ num1}+ {num2}{answer}";
             History.Children.Add(label);
         }
     }
