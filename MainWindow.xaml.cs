@@ -28,7 +28,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void NumButtonClick(object sender, RoutedEventArgs e)
+        private void ButtonClick(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
             expresion += btn.Content;
@@ -64,11 +64,16 @@ namespace Calculator
         {
             try
             {
-                tb.Text = new DataTable().Compute(expresion, null).ToString();
+                expresion = new DataTable().Compute(expresion, null).ToString();
+                
             }
             catch (Exception ex)
             {
-                tb.Text = ex.Message;
+                expresion = ex.Message;
+            }
+            finally
+            {
+                tb.Text = expresion;
             }
         }
         //    private void AddHistory(double num1, double num2, double answer,String op)
