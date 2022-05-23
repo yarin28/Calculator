@@ -11,20 +11,21 @@
         </TextBox>
         <Button x:Name="sum1" Content="+" HorizontalAlignment="Left" Margin="234,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button x:Name="sub1" Content="-" HorizontalAlignment="Left" Margin="274,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button x:Name="mul1" Content="*" HorizontalAlignment="Left" Margin="315,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button x:Name="div1" Content="/" HorizontalAlignment="Left" Margin="355,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button x:Name="clear1" Content="clear" HorizontalAlignment="Left" Margin="232,269,0,0" VerticalAlignment="Top" Click="clear" Height="40" Width="40"/>
+        <Button x:Name="mul1" Content="*" HorizontalAlignment="Left" Margin="314,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
+        <Button x:Name="div1" Content="/" HorizontalAlignment="Left" Margin="354,93,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
+        <Button x:Name="clear1" Content="clear" HorizontalAlignment="Left" Margin="234,269,0,0" VerticalAlignment="Top" Click="Clear" Height="44" Width="40"/>
         <Button Content="1" HorizontalAlignment="Left" Margin="234,137,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="2" HorizontalAlignment="Left" Margin="274,137,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="315,137,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="314,137,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="4" HorizontalAlignment="Left" Margin="234,181,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="275,181,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="274,181,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="6" HorizontalAlignment="Left" Margin="314,181,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="232,225,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="234,225,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="8" HorizontalAlignment="Left" Margin="274,225,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="9" HorizontalAlignment="Left" Margin="314,225,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="314,269,0,0" VerticalAlignment="Top" Click="ButtonClick" Height="44" Width="40"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="274,267,0,0" VerticalAlignment="Top" Click="EqualButtonClick" Height="44" Width="40"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="274,269,0,0" VerticalAlignment="Top" Click="EqualButtonClick" Height="44" Width="40"/>
+        <StackPanel x:Name="History"/>
 
 
     </Grid>
