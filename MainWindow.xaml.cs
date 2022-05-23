@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,80 +21,65 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        String expresion = "";
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void NumButtonClick(object sender, RoutedEventArgs e)
         {
-
+            Button btn = (Button)sender;
+            expresion += btn.Content;
+            tb.Text = expresion;
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void sum(object sender, RoutedEventArgs e)
         {
+            expresion += "+";
+            tb.Text = expresion;
 
         }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void sub(object sender, RoutedEventArgs e)
         {
-
+            expresion += "-";
+            tb.Text = expresion;
         }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void mul(object sender, RoutedEventArgs e)
         {
-
+            expresion += "*";
+            tb.Text = expresion;
         }
-
-    private void sum(object sender,RoutedEventArgs e)
+        private void div(object sender, RoutedEventArgs e)
         {
-            double num1 = double.Parse(num1box.Text);
-            double num2 = double.Parse(num2box.Text);
-            double answer = num1 + num2;
-            ans.Content = answer;
-
-            AddHistory(num1, num2, answer,"+");
-
+            expresion += "/";
+            tb.Text = expresion;
         }
-
-     
-
-        private void sub(object sender,RoutedEventArgs e)
-    {
-            double num1 = double.Parse( num1box.Text);
-            double num2 = double.Parse( num2box.Text);
-            double answer = num1 - num2;
-            ans.Content = answer;
-            AddHistory(num1, num2, answer,"-");
-
-        }
-        private void mul(object sender,RoutedEventArgs e)
-    {
-            double num1 = double.Parse( num1box.Text);
-            double num2 = double.Parse( num2box.Text);
-            double answer = num1 * num2;
-            ans.Content = answer;
-            AddHistory(num1, num2, answer,"*");
-
-        }
-        private void div(object sender,RoutedEventArgs e)
-    {
-            double num1 = double.Parse( num1box.Text);
-            double num2 = double.Parse( num2box.Text);
-            double answer = num1 / num2;
-            ans.Content = answer;
-            AddHistory(num1, num2, answer,"/");
-
-        }
-        private void AddHistory(double num1, double num2, double answer,String op)
+        private void clear(object sender, RoutedEventArgs e)
         {
-            Label label = new Label();
-            label.Height = 100;
-            label.Width = 100;
-            label.HorizontalAlignment = HorizontalAlignment.Left;
-            label.VerticalAlignment = VerticalAlignment.Top;
-            label.Content = $"{ num1}\n+\n {num2}\n--------\n{answer}";
-            History.Children.Add(label);
+            expresion = "";
+            tb.Text = expresion;
         }
+        private void EqualButtonClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                tb.Text = new DataTable().Compute(expresion, null).ToString();
+            }
+            catch (Exception ex)
+            {
+                tb.Text = ex.Message;
+            }
+        }
+        //    private void AddHistory(double num1, double num2, double answer,String op)
+        //    {
+        //        Label label = new Label();
+        //        label.Height = 100;
+        //        label.Width = 100;
+        //        label.HorizontalAlignment = HorizontalAlignment.Left;
+        //        label.VerticalAlignment = VerticalAlignment.Top;
+        //        label.Content = $"{ num1}\n+\n {num2}\n--------\n{answer}";
+        //        History.Children.Add(label);
+        //    }
     }
 }
